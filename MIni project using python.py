@@ -30,7 +30,7 @@ def isPalindrome(str1):
     if check:
         print("Yes")
     else:
-        print("No")
+        print("Not a Palindrome")
 
 #displaying index of first appearance of substring
 def findSubstring(str1):
@@ -73,7 +73,7 @@ def switch(str1):
         
 str1 = input("Enter string:\n")
 switch(str1)
-c= input("Would you like to continue?")
+c= input("Would you like to continue?(y/n)")
 while c == "y" or c == "Y":
     switch(str1)
     c = input("Would you like to continue?")
