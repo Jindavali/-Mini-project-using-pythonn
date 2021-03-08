@@ -54,24 +54,28 @@ def word_count(str1):
 
 
 def switch(str1):
-        print("\nWhat function would you like to perform\n1.Display word with longest length\n2.Frequency of characters\n3.Palindrome check\n4.index of first appearance of substring\n5.count of occurance of each word in a given string")
-    
-        ch = int(input("\nEnter corresponding number: "))
-        if ch == 1:
-            longestWordLength(str1)
-        elif ch == 2:
-            frequency_count(str1)
-        elif ch == 3:
-            isPalindrome(str1)
-        elif ch == 4:
-            findSubstring(str1)
-        elif ch == 5:
-            word_count(str1)
-        else :
-            print("incorrect number")
-        c = input("would you like to select again? y/n\n")
-        if c == "y" or "Y":
-            switch(str1)
+    print("\nWhat function would you like to perform\n1.Display word with longest length\n2.Frequency of characters\n3.Palindrome check\n4.index of first appearance of substring\n5.count of occurance of each word in a given string")
 
+    ch = int(input("\nEnter corresponding number: "))
+    if ch == 1:
+        longestWordLength(str1)
+    elif ch == 2:
+        frequency_count(str1)
+    elif ch == 3:
+        isPalindrome(str1)
+    elif ch == 4:
+        findSubstring(str1)
+    elif ch == 5:
+        word_count(str1)
+    else :
+        print("incorrect number")
+    
+        
 str1 = input("Enter string:\n")
 switch(str1)
+c= input("Would you like to continue?")
+while c == "y" or c == "Y":
+    switch(str1)
+    c = input("Would you like to continue?")
+
+
